@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ladcounter-dev-140446-authRole",
+      "UnauthRoleArn": "arn:aws:iam::066354352598:role/amplify-ladcounter-dev-140446-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::066354352598:role/amplify-ladcounter-dev-140446-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ladcounter-dev-140446-deployment",
+      "UnauthRoleName": "amplify-ladcounter-dev-140446-unauthRole",
+      "StackName": "amplify-ladcounter-dev-140446",
+      "StackId": "arn:aws:cloudformation:us-east-1:066354352598:stack/amplify-ladcounter-dev-140446/459ac520-4c23-11ec-8d36-0e79699370ef",
+      "AmplifyAppId": "d1v9jcckr9yhj9"
+    }
+  }
+}

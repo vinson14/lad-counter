@@ -20,7 +20,7 @@ const CounterCard = ({ value }) => {
         <CounterCardHeader>{COUNTER_CARD_HEADER}</CounterCardHeader>
         <CounterCardValue>{value}</CounterCardValue>
       </Box>
-      <Box p={5}>
+      <Box p={5} display="flex" flexDirection="column" alignItems="center">
         <AddButton onClick={openNewInviteForm}>
           {ADD_INVITE_BUTTON_TEXT}
         </AddButton>
