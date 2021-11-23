@@ -10,6 +10,14 @@
       "StackName": "amplify-ladcounter-dev-140446",
       "StackId": "arn:aws:cloudformation:us-east-1:066354352598:stack/amplify-ladcounter-dev-140446/459ac520-4c23-11ec-8d36-0e79699370ef",
       "AmplifyAppId": "d1v9jcckr9yhj9"
+    },
+    "categories": {
+      "function": {
+        "lad30counter": {
+          "deploymentBucketName": "amplify-ladcounter-dev-140446-deployment",
+          "s3Key": "amplify-builds/lad30counter-2b495770775067613175-build.zip"
+        }
+      }
     }
   }
 }

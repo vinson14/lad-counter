@@ -44,10 +44,14 @@ export default function Home() {
     <MainContext.Provider value={context}>
       <MainContainer>
         {loading && <LoadingBox />}
-        <MainHeader>{MAIN_HEADER}</MainHeader>
-        <CounterCard value={invites.length} />
-        <NewInviteForm />
-        <ViewInvites />
+        {!loading && (
+          <>
+            <MainHeader>{MAIN_HEADER}</MainHeader>
+            <CounterCard value={invites.length} />
+            <NewInviteForm />
+            <ViewInvites />
+          </>
+        )}
       </MainContainer>
     </MainContext.Provider>
   );
