@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/invites",
+      "lambdaFunction": "lad30counter",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/invites"
+    }
+  ],
+  "resourceName": "lad30counter",
+  "apiName": "lad30counter",
+  "functionArns": [
+    {
+      "lambdaFunction": "lad30counter"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-ladcounter-dev-140446-authRole",
+    "unAuthRoleName": "amplify-ladcounter-dev-140446-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "lad30counter",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
