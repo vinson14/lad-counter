@@ -12,7 +12,7 @@ import CardContainer from "../stateless/cards/card-container";
 import CounterCardHeader from "../stateless/typography/counter-card-header";
 import CounterCardValue from "../stateless/typography/counter-card-value";
 const CounterCard = ({ value }) => {
-  const { openNewInviteForm } = useContext(MainContext);
+  const { openNewInviteForm, openViewInvites } = useContext(MainContext);
 
   return (
     <CardContainer>
@@ -24,7 +24,9 @@ const CounterCard = ({ value }) => {
         <AddButton onClick={openNewInviteForm}>
           {ADD_INVITE_BUTTON_TEXT}
         </AddButton>
-        <ViewButton>{VIEW_INVITES_BUTTON_TEXT}</ViewButton>
+        <ViewButton onClick={openViewInvites}>
+          {VIEW_INVITES_BUTTON_TEXT}
+        </ViewButton>
       </Box>
     </CardContainer>
   );
