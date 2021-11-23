@@ -6,7 +6,7 @@ import {
   INVITER_NAME_KEY,
   VIEW_INVITES_MODAL_TITLE,
 } from "../../data/strings";
-import InviteCard from "../stateless/cards/invite-card";
+import InviteCard from "./invite-card";
 import ModalContainer from "../stateless/modal/modal-container";
 
 const ViewInvites = () => {
@@ -21,10 +21,7 @@ const ViewInvites = () => {
       <Grid container>
         {invites.map((invite) => (
           <Grid item key={invite[INVITER_NAME_KEY]} xs={12} lg={12} p={2}>
-            <InviteCard
-              inviter={invite[INVITER_NAME_KEY]}
-              invitee={invite[INVITEE_NAME_KEY]}
-            />
+            <InviteCard invite={invite} />
           </Grid>
         ))}
       </Grid>

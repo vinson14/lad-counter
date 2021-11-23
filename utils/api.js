@@ -25,3 +25,17 @@ export const postInvite = async (invite) => {
     return false;
   }
 };
+
+export const deleteInvite = async (invite) => {
+  const init = { headers: {} };
+  try {
+    const response = await API.del(
+      apiName,
+      `${path}/${invite.dateCreated}`,
+      init
+    );
+    return true;
+  } catch (err) {
+    return false;
+  }
+};

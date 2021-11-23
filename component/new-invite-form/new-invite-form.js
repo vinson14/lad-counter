@@ -55,9 +55,11 @@ const NewInviteForm = () => {
             label={INVITEE_NAME_FIELD_LABEL}
             onChange={(event) => onChange(event, INVITEE_NAME_KEY)}
           />
-          <AddButton loading={formLoading} type="submit">
-            Add Invite
-          </AddButton>
+          <Box display="flex" justifyContent="center">
+            <AddButton loading={formLoading} type="submit">
+              Add Invite
+            </AddButton>
+          </Box>
         </Box>
       </FormContainer>
     </ModalContainer>
