@@ -10,7 +10,9 @@ export const getInvites = async () => {
   const init = {
     headers: {},
   };
-  return await API.get(apiName, path, init);
+  const invites = await API.get(apiName, path, init);
+  invites.sort((a, b) => b.dateCreated - a.dateCreated);
+  return invites;
 };
 
 export const postInvite = async (invite) => {
