@@ -12,7 +12,7 @@ const MainContainer = ({ children }) => {
       p={3}
     >
       <MetaData />
-      <Container> {children}</Container>
+      <Container>{children}</Container>
     </Box>
   );
 };

@@ -5,9 +5,18 @@ const theme = createTheme({
     fontFamily: "Quicksand, sans-serif",
   },
   palette: {
+    primary: {
+      main: "#118ab2",
+    },
     secondary: {
-      main: "#00c853",
+      main: "#06d6a0",
       contrastText: "#fff",
+    },
+    warning: {
+      main: "#ffd166",
+    },
+    error: {
+      main: "#ef476f",
     },
   },
   shape: {
