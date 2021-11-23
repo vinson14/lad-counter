@@ -1,9 +1,9 @@
 import Amplify from "@aws-amplify/core";
-import awsConfig from "../src/aws-exports";
+import awsmobile from "../src/aws-exports";
 const fakeInvites = [{ name: "Huam", inviteeName: "Vinson" }];
 import API from "@aws-amplify/api";
 
-Amplify.configure(awsConfig);
+Amplify.configure(awsmobile);
 const apiName = "lad30counter";
 const path = "/invites";
 export const getInvites = async () => {
