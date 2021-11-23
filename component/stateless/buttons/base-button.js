@@ -1,10 +1,10 @@
-import { Button } from "@mui/material";
+import { LoadingButton } from "@mui/lab";
 
 const BaseButton = ({ children, ...props }) => {
   return (
-    <Button variant="contained" fullWidth sx={{ my: 1 }} {...props}>
+    <LoadingButton variant="contained" fullWidth sx={{ my: 1 }} {...props}>
       {children}
-    </Button>
+    </LoadingButton>
   );
 };
 

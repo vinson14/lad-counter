@@ -1,4 +1,6 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import { useContext } from "react";
+import { MainContext } from "../../contexts/main-context";
 import {
   ADD_INVITE_BUTTON_TEXT,
   COUNTER_CARD_HEADER,
@@ -10,6 +12,8 @@ import CardContainer from "../stateless/cards/card-container";
 import CounterCardHeader from "../stateless/typography/counter-card-header";
 import CounterCardValue from "../stateless/typography/counter-card-value";
 const CounterCard = ({ value }) => {
+  const { openNewInviteForm } = useContext(MainContext);
+
   return (
     <CardContainer>
       <Box>
@@ -17,7 +21,9 @@ const CounterCard = ({ value }) => {
         <CounterCardValue>{value}</CounterCardValue>
       </Box>
       <Box p={5}>
-        <AddButton>{ADD_INVITE_BUTTON_TEXT}</AddButton>
+        <AddButton onClick={openNewInviteForm}>
+          {ADD_INVITE_BUTTON_TEXT}
+        </AddButton>
         <ViewButton>{VIEW_INVITES_BUTTON_TEXT}</ViewButton>
       </Box>
     </CardContainer>
